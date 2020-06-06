@@ -1,0 +1,140 @@
+/* contenido de la pagina */
+.container {
+  background-color: #f2f2f2;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 350px;
+}
+/*Noticias*/
+.noticias {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.noticias img {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border-top-left-radius: 25px;
+  justify-content: flex-start;
+}
+
+.texto {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+
+}
+.parrafo{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+}
+.par {
+  display: flex;
+  justify-content: flex-end;
+  border: 5px solid grey;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.impar {
+  display: flex;
+  justify-content: flex-end;
+  border: 5px solid #c41d5d;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+#masnoticias{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#icononoticias{
+   width: 100px;
+   height: 100px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+/*final de noticias*/
+/* final de contenido de la pagina */
+@media (max-width: 769px) {
+  .noticias{
+    margin-top: 50px;
+  }
+.impar{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.impar img{
+  margin-left: auto;
+    margin-right: auto;
+}
+.par{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.par img{
+  margin-left: auto;
+    margin-right: auto;
+}
+}
+@media (max-width: 415px){
+  .impar{
+    margin-left: -19%;
+    margin-right: -19%;
+  }
+  .par{
+    margin-left: -19%;
+    margin-right: -19%;
+  }
+.impar img{
+  margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+}
+.noticias{
+  margin-top: 50px;
+}
+.par img{
+  margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+}
+ .impar p{
+font-size: 17px;
+text-align: center;
+}
+.par p{
+font-size: 17px;
+text-align: center;
+}
+.impar h2{
+font-size: 25px;
+text-align: center;
+}
+.par h2{
+font-size: 25px;
+text-align: center;
+}

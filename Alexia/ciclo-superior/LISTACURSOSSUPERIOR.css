@@ -1,0 +1,155 @@
+.container{
+  background-color: #f2f2f2;
+}
+nav ul li a{
+  height: 38px;
+}
+#vueltainicio{
+  height: 55.5px;
+}
+
+/*Lista*/
+.lista_ciclo_superior {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.lista_ciclo_superior img {
+  width: 275px;
+  height: 275px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.texto {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  text-align: center;
+}
+h1{
+  line-height: 5px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.parrafo{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.par {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 5px solid grey;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.impar {
+  display: flex;
+  justify-content: flex-end;
+  border: 5px solid #c41d5d;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+/* Final de lista */
+@media (max-width: 1366px) {
+  h1{
+    line-height: normal;
+    font-size: 100%;
+  }
+  p{
+    font-size: 90%;
+  }
+}
+@media (max-width:769px) {
+  h1{
+    font-size: 90%;
+  }
+  p{
+    font-size: 70%;
+  }
+  .lista_ciclo_superior img{
+    width: 200px;
+    height: 200px;
+  }
+  .lista_ciclo_superior{
+    margin-top: 50px;
+  }
+  .impar{
+    display: flex;
+    align-items: center;
+  }
+  .par{
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 415px){
+  .impar{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .impar img{
+    margin-left: auto;
+      margin-right: auto;
+  }
+  .par{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .par img{
+    margin-left: auto;
+      margin-right: auto;
+  }
+  .impar{
+    margin-left: -19%;
+    margin-right: -19%;
+  }
+  .par{
+    margin-left: -19%;
+    margin-right: -19%;
+  }
+.impar img{
+  margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+}
+.noticias{
+  margin-top: 50px;
+}
+.par img{
+  margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+}
+ .impar p{
+font-size: 17px;
+text-align: center;
+}
+.par p{
+font-size: 17px;
+text-align: center;
+}
+.impar h2{
+font-size: 25px;
+text-align: center;
+}
+.par h2{
+font-size: 25px;
+text-align: center;
+}

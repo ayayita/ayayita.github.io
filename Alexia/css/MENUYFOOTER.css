@@ -1,0 +1,280 @@
+/* html */
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* página completa */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Bebas Neue';
+  font-size: 25px;
+  color: black;
+  background-color: #fff;
+}
+
+.wrapper {
+  min-height: 100vh;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* contenido de la pagina */
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 350px;
+}
+
+/* encabezado */
+header {
+  display: flex;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-bottom: black 1px solid;
+  letter-spacing: 2px;
+}
+
+/* menu */
+.menu-responsive {
+  display: none;
+}
+
+#botonmenu {
+  display: none;
+}
+
+/* header label {
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  border-right: black 1px solid;
+}
+
+header label: hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+} */
+#vueltainicio {
+  padding: 11px 20px;
+  background-color: #c41d5d;
+  color: white;
+}
+
+#vueltainicio:hover {
+  transition-duration: 0.2s;
+  background-color: #a6194e;
+}
+
+.menu-escritorio {
+  width: 100%;
+}
+
+.menu ul {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul ul {
+  display: none;
+}
+
+.menu ul li {
+  flex-grow: 1;
+  border-right: black 1px solid;
+}
+
+.menu ul li:hover ul {
+  display: block;
+  position: absolute;
+  background-color: #F2F2F2;
+  z-index: 100;
+}
+
+.menu ul li:focus ul {
+  display: block;
+  position: absolute;
+  background-color: #F2F2F2;
+  z-index: 100;
+}
+
+.menu ul ul li {
+  border: 1px solid black;
+}
+
+ul li img {
+  height: 55.5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu ul li a {
+  display: flex;
+  padding: 20px 20px;
+  color: black;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.menu ul li a:hover {
+  transition-duration: 0.2s;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* final de encabezado */
+/* Footer */
+footer {
+  letter-spacing: 1px;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 18px;
+  background: #f2f2f2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: black 2px solid;
+  line-height: 10px;
+}
+
+.containerfooter {
+  display: flex;
+}
+
+.iconofooter {
+  margin: 10px;
+  width: 25%;
+  height: 25%;
+}
+
+.icono {
+  width: 30px;
+  height: 30px;
+}
+
+.elemento--footer {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.elemento--footer:hover {
+  transition-duration: 0.2s;
+  background: rgba(0, 0, 0, 0.3)
+}
+
+.redes--sociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 30%;
+}
+
+#legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 12px;
+  margin: 10px;
+}
+
+/* final de footer */
+/* @Media Query*/
+/* Tablet */
+@media (max-width:769px) {
+
+  /* Menú */
+  .menu-escritorio {
+    display: none;
+  }
+
+  .menu-responsive {
+    position: fixed;
+    margin: 0;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    background: #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    line-height: 18px;
+    z-index: 1000;
+  }
+
+  .menu-responsive .m-responsive {
+    width: 100%;
+  }
+
+  .menu-responsive ul {
+    list-style: none;
+  }
+
+  .menu-responsive .m-responsive li a {
+    color: #000;
+    display: block;
+    padding: 15px 20px;
+    background: #f2f2f2;
+  }
+
+  .menu-responsive .m-responsive li a:hover {
+    transition-duration: 0.2s;
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .menu-responsive a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  #icono-menu {
+    height: 35px;
+    width: 35px;
+    float: right;
+  }
+
+  .boton-menu {
+    padding: 10px;
+    display: block;
+    background: #c41d5d;
+    color: #000;
+    line-height: 30px;
+  }
+
+  /* submenu */
+  .menu-responsive .m-responsive ul {
+    display: none;
+  }
+
+  .menu-responsive .m-responsive ul li a {
+    background: #c2c2c2;
+    line-height: 1.2;
+  }
+
+  .menu-responsive .m-responsive .activado>a {
+    background: #c2c2c2;
+  }
+
+  .menu-responsive .m-responsive {
+    display: none;
+  }
+
+  /* Carrusel */
+  #carrusel {
+    margin-top: 45px;
+  }
+
+  /* Footer */
+  .containerfooter {
+    display: none;
+  }
+}

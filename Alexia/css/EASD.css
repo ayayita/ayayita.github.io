@@ -1,0 +1,48 @@
+/*Div titulo*/
+.titulo h1 {
+  border-top: 25px solid #f2f2f2;
+  display: flex;
+  background-color: #c41d5d;
+  margin: 0px;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding: 30px;
+font-size: 55px;
+}
+
+/*Fin div titulo*/
+/*Div contenido*/
+.contenido {
+  text-align: center;
+  display: flex;
+  background-color: #f2f2f2;
+  margin: 0px;
+  margin-top: 0px;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 5.5%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+video{
+  width: 50%;
+    box-shadow: 0 0 40px -10px #c41d5d;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+@media (max-width: 415px){
+  .contenido {
+    font-size: 17px;
+  }
+  .titulo h1 {
+    font-size: 27px;
+    text-align: center;
+  }
+}
+@media (max-width: 769px){
+  video{
+    width: 100%;
+  }
+}

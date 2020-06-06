@@ -1,0 +1,80 @@
+nav ul li a{
+  height: 27.5px;
+}
+#vueltainicio{
+  height: 46px;
+}
+.titulo {
+    font-size: 80%;
+  border-top: 25px solid #f2f2f2;
+  display: flex;
+  background-color: #c41d5d;
+  margin: 0px;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+/*Fin div titulo*/
+/*Div contenido*/
+.contenido {
+  display: flex;
+  background-color: #f2f2f2;
+  margin: 0px;
+  margin-top: 0px;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 5.5%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.contenido p{
+text-align: left;
+}
+/*Fin div contenido*/
+/*Lista*/
+.contenido ul li {
+  line-height: 40px;
+  margin-left: 10%;
+}
+
+/*Lista*/
+table{
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 25px;
+  border-collapse: collapse;
+  text-align: center;
+}
+.rosa{
+  background-color: #c41d5d;
+}
+.gris{
+  background-color: lightgrey;
+}
+.titulo_asignatura{
+  text-align: left;
+}
+.derecha{
+  text-align: right;
+}
+.negrita{
+  font-weight: bold;
+}
+/* Final de la lista */
+@media (max-width: 415px){
+  .contenido {
+    font-size: 20px;
+  }
+  .titulo h1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.2;
+    margin-top: 50px;
+    font-size: 27px;
+    text-align: center;
+  }
+  table{
+    width: 100%;
+  }
+}

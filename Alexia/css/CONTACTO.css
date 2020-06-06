@@ -1,0 +1,112 @@
+#container{
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row;
+  justify-content: space-around;
+  padding-top: 50px;
+  align-items: center;
+  padding-bottom: 15%;;
+}
+.contact--form{
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-shadow: 0 0 40px -10px #c41d5d;
+}
+.camposquerellenar{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+}
+.lateral{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.arriba{
+  display: flex;
+  flex-direction: column;
+}
+.nombreyapellidos{
+  display: flex;
+  justify-content: space-around;
+}
+.correoytelefono{
+  display: flex;
+  justify-content: space-around;
+}
+.input{
+  width: 45%;
+  margin-bottom: 10px;
+}
+label{
+  margin-left: 10px;
+}
+/* Media query */
+@media (max-width: 1366px) {
+.contact--form {
+  width: 50%;
+}
+textarea{
+  width: 100%;
+}
+label{
+  font-size: 20px;
+}
+}
+@media (max-width: 769px){
+  #container{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .lateral {
+    margin-bottom: 50px;
+  }
+  .contact--form{
+    width: 75%;
+  }
+  label{
+    font-size: 17px;
+  }
+}
+@media (max-width: 415px) {
+  .lateral{
+    margin-top: 20px;
+  }
+  .lateral h1{
+    font-size: 25px;
+  }
+  .lateral p{
+    font-size: 18px;
+  }
+  .botones img{
+  width: 35px;
+  height: 35px;
+  }
+  .nombreyapellidos{
+display:flex;
+flex-direction: column;
+  }
+  .correoytelefono{
+    display: flex;
+    flex-direction: column;
+  }
+  .nombreyapellidos .input{
+    width: 100%;
+  }
+  .correoytelefono .input{
+    width: 100%;
+  }
+.mensajeticksyboton  textarea{
+    height: 200px;
+  }
+  .mensajeticksyboton label{
+    font-size: 15px;
+  }
+}
